@@ -1,0 +1,200 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#login-container{
+	// background-image: url("../../public/login_background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#sidebar{
+	max-height: 100vh;
+	background-color: $sidebar-bg-color !important;
+}
+
+#sidebar .navbar-brand img {
+	max-height: 40px;
+}
+
+#sidebar hr{
+	opacity: 1;
+	border-top-width: 2px;
+	border-top-color: $sidebar-border-color;
+}
+
+#sidebar-user-dropdown > div{
+	width: 32px;
+	height: 32px;
+	overflow: "hidden";
+}
+
+#sidebar-user-dropdown > div > img{
+	width: 32px;
+	height: 32px;
+	object-fit: cover;
+}
+
+.topbar{
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: $topbar-border-color !important;
+	background-color: $topbar-bg-color;
+}
+
+.form-floating > .form-control::placeholder {
+	color: revert !important;
+}
+.form-floating > .form-control:not(:focus)::placeholder {
+	color: transparent !important;
+}
+
+.list-card:hover{
+	background-color: $card-hover-color;
+}
+.list-card:active{
+	background-color: $card-active-color;
+}
+
+.skeleton::after{
+	animation: skeleton-loading 2s linear infinite alternate;
+}
+
+.skeleton-text{
+	visibility: hidden;
+	position: relative;
+}
+
+.skeleton-text::after{
+	visibility: visible;
+	position: absolute;
+	content: ' ';
+	width: 90%;
+	height: 90%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: $border-radius;
+}
+
+.skeleton-text-title::after{
+	width: 70%;
+}
+.skeleton-text-content::after{
+	width: 90%;
+}
+
+.skeleton-button{
+	visibility: hidden;
+	position: relative;
+}
+.skeleton-button::after{
+	visibility: visible;
+	position: absolute;
+	content: ' ';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: $border-radius;
+}
+
+@keyframes skeleton-loading {
+	0% {
+		background-color: rgba($black, .05);
+	}
+	20% {
+		background-color: rgba($black, .05);
+	}
+	50% {
+		background-color: rgba($black, .1);
+	}
+	80% {
+		background-color: rgba($black, .05);
+	}
+	100% {
+		background-color: rgba($black, .05);
+	}
+}
+
+.tox-tinymce{
+	border-width: $border-width !important;
+	border-color: $border-color !important;
+	border-radius: $border-radius !important;
+}
+.tox-tinymce--disabled{
+	border-color: $border-color !important;
+}
+
+.tox-tinymce.focus{
+	border-color: #86b7fe !important;
+	box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.tox-tinymce--disabled .tox-edit-area__iframe, .tox-tinymce--disabled .tox-statusbar, .tox-tinymce--disabled .tox-editor-header{
+	background-color: $input-disabled-bg !important;
+}
+.tox-tbtn--disabled .tox-toolbar__primary{
+	background-color: $input-disabled-bg !important;
+}
+
+.tox .tox-dialog--width-lg{
+	max-width: 400px !important;
+}
+
+
+.react-datepicker__header{
+	background-color: $card-bg;
+}
+.react-datepicker__navigation{
+	margin-top: $spacer * 0.5;
+}
+.react-datepicker__header{
+	border-bottom-color: $border-color;
+}
+.react-datepicker__current-month{
+	font-weight: normal;
+}
+.react-datepicker__navigation-icon::before{
+	top: 12px;
+}
+.react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name{
+	width: 2.1rem;
+}
+
+.input-group .react-datepicker-wrapper{
+	position: relative;
+	flex: 1 1 auto;
+	width: 1%;
+	min-width: 0;
+}
+.input-group .react-datepicker-wrapper .form-control{
+	margin-left: -1px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.rct-icon{
+	min-width: 24px;
+}
+.react-checkbox-tree ol ol {
+	padding-left: 32px;
+}
+
+.form-control.disabled{
+	background-color: $input-disabled-bg !important;
+}
+
+.line-1{
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+}

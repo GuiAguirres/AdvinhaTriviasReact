@@ -1,0 +1,35 @@
+$dark-blue:  #22293F;
+$light-pink: #DB99EE;
+$light-blue: #87D7EA;
+
+$body-bg: #f7f8fa;
+$body-color: $black;
+$link-color: $black;
+
+$card-border-color:       #f2f4f6;
+$card-hover-color:          rgba($white, .7);
+$card-active-color:         rgba($white, .9);
+
+$navbar-light-color:                rgba($white, .55);
+$navbar-light-hover-color:          rgba($white, .7);
+$navbar-light-active-color:         rgba($white, .9);
+$navbar-light-disabled-color:       rgba($white, .3);
+
+$sidebar-bg-color: $dark-blue;
+$sidebar-border-color: $dark-blue;
+$sidebar-item-border-color: #f2f4f6;
+
+$topbar-bg-color: transparent;
+$topbar-border-color: #edeff2;
+
+$toast-background-color:            rgba($white, 1);
+$toast-header-background-color:     rgba($white, 1);
+
+$form-check-input-width:  2em;
+$form-switch-width:       4em;
+
+$custom-colors: (
+//   "dark-blue": $dark-blue,
+//   "light-pink": $light-pink,
+//   "light-blue": $light-blue,
+);
